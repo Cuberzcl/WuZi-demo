@@ -1,0 +1,264 @@
+.function_area {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    /* background-color: aquamarine; */
+}
+
+.function_area .retract {
+    position: absolute;
+    border-radius: 72px;
+    width: 256px;
+    height: 144px;
+    line-height: 144px;
+    text-align: center;
+    font-size: 0;
+    font-family: '华文行楷';
+    color: rgba(0, 0, 255, 0.1);
+    background: url(../images/retract.jpg);
+    background-size: contain;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.game .function_area .retract_change {
+    position: absolute;
+    border-radius: 72px;
+    width: 256px;
+    height: 144px;
+    line-height: 144px;
+    text-align: center;
+    font-size: 40px;
+    font-family: '华文行楷';
+    color: rgba(0, 0, 255, 0.3);
+    cursor: pointer;
+    z-index: 3;
+}
+
+.function_area .newGame {
+    position: absolute;
+    top: 300px;
+    border-radius: 72px;
+    width: 256px;
+    height: 144px;
+    line-height: 144px;
+    text-align: center;
+    font-size: 0;
+    font-family: '华文行楷';
+    color: rgba(0, 0, 255, 0.1);
+    background: url(../images/newGame.png);
+    background-size: contain;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.game .function_area .newGame_change {
+    position: absolute;
+    top: 300px;
+    border-radius: 72px;
+    width: 256px;
+    height: 144px;
+    line-height: 144px;
+    text-align: center;
+    font-size: 40px;
+    font-family: '华文行楷';
+    color: rgba(0, 0, 255, 0.3);
+    cursor: pointer;
+    z-index: 3;
+}
+
+.question {
+    display: none;
+    position: relative;
+    width: 512px;
+    height: 288px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background: url(../images/question.png);
+    background-size: 512px 288px;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.question .title {
+    width: 45%;
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+    height: 40px;
+    font-size: 30px;
+    font-family: '隶书';
+    position: relative;
+    color: teal;
+    cursor: move;
+}
+
+.question-content {
+    overflow: hidden;
+    margin: 0px 0px 20px 0px;
+}
+
+.question-content span {
+    position: absolute;
+    font-size: 30px;
+}
+
+.question-content span a {
+    color: blueviolet;
+    font-family: '隶书';
+    text-align: center;
+}
+
+.question-content .yes {
+    top: 100px;
+    left: 226px;
+}
+
+.question-content .no {
+    top: 200px;
+    left: 211px;
+}
+
+.question-content .no a {
+    color: azure;
+}
+
+.chooseChess {
+    /* overflow: hidden; */
+    position: relative;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    border-radius: 250px;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 192, 203, 1);
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.chooseChess .img {
+    overflow: hidden;
+    position: absolute;
+    border-radius: 250px;
+    width: 500px;
+    height: 500px;
+    background: url(../images/chooseChess.png);
+    background-size: 500px;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+.chooseChess .statement {
+    position: absolute;
+    top: -40px;
+    width: 500px;
+    text-align: center;
+    color: aquamarine;
+    font-size: 25px;
+    font-family: '仿宋';
+    font-weight: 900;
+    z-index: 999;
+}
+
+.afterChoose {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: -70px;
+    width: 200px;
+    height: 50px;
+    z-index: 1000;
+}
+
+.afterChoose button {
+    position: absolute;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: '楷体';
+    color: azure
+}
+
+.afterChoose .confirm {
+    top: 0;
+}
+
+.afterChoose .anew {
+    bottom: -10px;
+}
+
+.chooseChess .chesses {
+    position: absolute;
+    left: 145px;
+    height: 500px;
+}
+
+.chooseChess .chesses img {
+    width: 68px;
+    height: 68px;
+    border-radius: 34px;
+    z-index: 1000;
+}
+
+.chooseChess .chesses .nene {
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+
+.chooseChess .chesses .riri {
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.chooseChess .chesses p {
+    left: 70px;
+    width: 100px;
+    height: 68px;
+    line-height: 68px;
+    text-align: center;
+    z-index: 1000;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: default;
+}
+
+.chooseChess .chesses .nene_player {
+    position: absolute;
+    top: 10px;
+    color: white;
+}
+
+.chooseChess .chesses .riri_player {
+    position: absolute;
+    bottom: 11px;
+    color: yellow;
+}
+
+.bg {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .3);
+    z-index: 3;
+}
+
+.black {
+    position: relative;
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 1);
+    z-index: 3;
+}

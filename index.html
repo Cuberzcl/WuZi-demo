@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五子棋——対戦❣</title>
+    <meta name="description" content="CLの网站，现阶段为游戏五子棋，融合了一些二次元元素，是个不折不扣的傻卵捏！">
+    <meta name="keywords" content="五子棋,二次元,傻卵,二刺猿,个人网站">
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/audio.css">
+    <link rel="stylesheet" href="./css/function_area.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <script src="./js/animate.js"></script>
+    <script src="./js/victory.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/audio.js"></script>
+</head>
+
+<body>
+    <div class="game">
+        <span class="test"></span>
+        <audio src="./"></audio>
+        <div class="ctrls">
+            <div class="sliderbar">
+                <span></span>
+                <div class="con"></div>
+            </div>
+            <div id="volume" title="音量"></div>
+            <ul>
+                <li class="li1"><img src="./images/1.png" alt=""><a href="javascript:;" id="prev" title="上一首"></a></li>
+                <li class="li2"><img src="./images/2.png" alt=""><a href="javascript:;" id="turnDown" title="音量-"></a>
+                </li>
+                <li class="li3"><img src="./images/3.png" alt="" id="change"><a href="javascript:;" id="play"
+                        title="播放/暂停"></a></li>
+                <li class="li4"><img src="./images/4.png" alt=""><a href="javascript:;" id="turnUp" title="音量+"></a>
+                </li>
+                <li class="li5"><img src="./images/5.png" alt=""><a href="javascript:;" id="next" title="下一首"></a></li>
+            </ul>
+        </div>
+        <div class="board">
+            <div class="volume"><img src="./images/volume.jpg" alt=""></div>
+            <div class="victory_img"><img src="./" alt=""></div>
+        </div>
+        <div class="function_area">
+            <div class="retract" title="悔棋">悔棋</div>
+            <div class="newGame" title="重新开始">重新开始</div>
+            <div id="question" class="question">
+                <div id="title" class="title">请再次确认是否重新开始！
+                </div>
+                <div id="question-content" class="question-content">
+                    <span class="yes"><a id="yes" href="javascript:void(0);">はい</a></span>
+                    <span class="no"><a id="no" href="javascript:void(0);">いいえ</a></span>
+                </div>
+            </div>
+            <div class="chooseChess">
+                <img src="./" alt="" class="img">
+                <p class="statement">请玩家1选择自己的棋子</p>
+                <div class="afterChoose">
+                    <button class="confirm">确认</button>
+                    <button class="anew">重选</button>
+                </div>
+                <div class="chesses">
+                    <img src="./images/nene.png" alt="" class="nene">
+                    <p class="nene_player">綾地寧々</p>
+                    <img src="./images/riri.png" alt="" class="riri">
+                    <p class="riri_player">鹿島理々</p>
+                </div>
+            </div>
+            <div id="bg" class="bg"></div>
+            <div id="black" class="black"></div>
+        </div>
+    </div>
+</body>
+
+</html>
